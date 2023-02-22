@@ -27,7 +27,6 @@
             }
         }
     },
-    
     "variables": {
         "containerGroupName": "init-container-group",
         "containerName": "init-container"
