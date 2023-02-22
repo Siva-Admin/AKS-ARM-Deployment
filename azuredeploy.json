@@ -137,13 +137,13 @@
                         "vnetSubnetID": "[variables('vnetSubnetId')]"
                     },
                     {
-                        "name": "sparkpool",
+                        "name": "spark",
                         "count": 1,
                         "enableAutoScaling": true,
                         "minCount": 1,
                         "maxCount": 2,
                         "vmSize": "[parameters('nodeSize')]",
-                        "osType": "Windows",
+                        "osType": "Linuz",
                         "type": "VirtualMachineScaleSets",
                         "mode": "User",
                         "vnetSubnetID": "[variables('vnetSubnetId')]"
