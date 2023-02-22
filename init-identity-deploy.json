@@ -28,6 +28,7 @@
             }
         }
     },
+    
     "variables": {
         "aksId": "[resourceId('Microsoft.ContainerService/managedClusters', parameters('clusterName'))]"
     },
