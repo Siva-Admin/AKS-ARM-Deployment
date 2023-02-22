@@ -1,7 +1,6 @@
 Deploy an AKS cluster running an [empty ASP.NET MVC web app](https://github.com/micya/webapp) via an ARM template. This ARM template deploys a Windows container, which requires advanced AKS networking.
 
 This ARM template does the following:
-
 1. Provision a virtual network
 2. Provision the AKS cluster
 3. Give cluster Network Contributor role to vnet
