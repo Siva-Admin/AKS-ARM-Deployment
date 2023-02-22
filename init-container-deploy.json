@@ -59,7 +59,7 @@
                     {
                         "name": "[variables('containerName')]",
                         "properties": {
-                            "image": "ghcr.io/micya/init-container",
+                            "image": "nginx",
                             "resources": {
                                 "requests": {
                                     "cpu": 1,
