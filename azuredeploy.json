@@ -209,7 +209,7 @@
                     }
                 },
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/micya/aks-arm/main/init-identity-deploy.json"
+                    "uri": "https://raw.githubusercontent.com/Siva-Admin/AKS-ARM-Deployment/main/init-identity-deploy.json"
                 }
             }
         },
@@ -237,7 +237,7 @@
                     }
                 },
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/micya/aks-arm/main/init-container-deploy.json"
+                    "uri": "https://raw.githubusercontent.com/Siva-Admin/AKS-ARM-Deployment/main/init-container-deploy.json"
                 }
             }
         }
