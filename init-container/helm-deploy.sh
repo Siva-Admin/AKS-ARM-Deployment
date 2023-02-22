@@ -7,10 +7,10 @@ az login --identity
 az aks get-credentials --name $CLUSTERNAME --resource-group $CLUSTERGROUP
 
 # add helm repo
-helm repo add webapp https://raw.githubusercontent.com/micya/webapp/master/charts
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 
 # update helm repos
 helm repo update
 
 # install helm chart
-helm install webapp webapp/webapp
+helm install ingress-nginx ingress-nginx/ingress-nginx
