@@ -23,7 +23,7 @@
             }
         },
         "kubernetesVersion": {
-            "defaultValue": "1.17.11",
+            "defaultValue": "1.24.6",
             "type": "String",
             "metadata": {
                 "description": "The version of Kubernetes."
@@ -41,11 +41,11 @@
             "type": "string"
         },
         "vnetAddressPrefix": {
-            "defaultValue": "10.0.0.0/8",
+            "defaultValue": "10.101.0.0/16",
             "type": "string"
         },
         "vnetSubnetPrefix": {
-            "defaultValue": "10.240.0.0/16",
+            "defaultValue": "10.101.0.0/21",
             "type": "string"
         },
         "dnsPrefix": {
@@ -53,14 +53,14 @@
             "type": "string"
         },
         "serviceCidr": {
-            "defaultValue": "10.0.0.0/16",
+            "defaultValue": "10.200.0.0/16",
             "type": "String",
             "metadata": {
                 "description": "A CIDR notation IP range from which to assign service cluster IPs."
             }
         },
         "dnsServiceIP": {
-            "defaultValue": "10.0.0.10",
+            "defaultValue": "10.200.0.10",
             "type": "String",
             "metadata": {
                 "description": "Containers DNS server IP address."
@@ -137,11 +137,11 @@
                         "vnetSubnetID": "[variables('vnetSubnetId')]"
                     },
                     {
-                        "name": "winnp",
-                        "count": 0,
+                        "name": "sparkpool",
+                        "count": 1,
                         "enableAutoScaling": true,
-                        "minCount": 0,
-                        "maxCount": 100,
+                        "minCount": 1,
+                        "maxCount": 2,
                         "vmSize": "[parameters('nodeSize')]",
                         "osType": "Windows",
                         "type": "VirtualMachineScaleSets",
